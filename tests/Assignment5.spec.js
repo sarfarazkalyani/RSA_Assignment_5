@@ -8,7 +8,7 @@ test("Mocked Events use on events catalog and event details page", async ({ page
     await page.getByRole("button", { name: "Sign In" }).click();
     await expect(page.getByRole("link", { name: "Browse Events →" })).toBeVisible();
 
-    // Both the catalog and detail event route use this data
+    // Both the catalog and detail event route use this data.
     const mockData = [
         {
             id: 412,
